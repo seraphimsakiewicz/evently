@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
+
+import "./globals.css";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -11,7 +12,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Evently",
-  description: "A platform for event management.",
+  description: "Evently is a platform for event management.",
   icons: {
     icon: "/assets/images/logo.svg",
   },

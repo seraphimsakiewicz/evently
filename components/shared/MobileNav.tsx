@@ -8,9 +8,9 @@ import {
 } from "@/components/ui/sheet";
 import Image from "next/image";
 import { Separator } from "../ui/separator";
-import { NavItems } from "./NavItems";
+import NavItems from "./NavItems";
 
-export const MobileNav = () => {
+const MobileNav = () => {
   return (
     <nav className="md:hidden">
       <Sheet>
@@ -37,3 +37,5 @@ export const MobileNav = () => {
     </nav>
   );
 };
+
+export default MobileNav;

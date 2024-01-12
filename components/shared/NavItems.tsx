@@ -3,13 +3,16 @@
 import { headerLinks } from "@/constants";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import React from "react";
 
-export const NavItems = () => {
-  const pathName = usePathname();
+const NavItems = () => {
+  const pathname = usePathname();
+
   return (
     <ul className="md:flex-between flex w-full flex-col items-start gap-5 md:flex-row">
       {headerLinks.map((link) => {
-        const isActive = pathName === link.route;
+        const isActive = pathname === link.route;
+
         return (
           <li
             key={link.route}
@@ -24,3 +27,5 @@ export const NavItems = () => {
     </ul>
   );
 };
+
+export default NavItems;

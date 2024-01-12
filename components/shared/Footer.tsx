@@ -11,12 +11,13 @@ const Footer = () => {
             alt="logo"
             width={128}
             height={38}
-          ></Image>
+          />
         </Link>
 
-        <p>2023 Evently. All Rights Reserved</p>
+        <p>2023 Evently. All Rights reserved.</p>
       </div>
     </footer>
   );
 };
+
 export default Footer;
